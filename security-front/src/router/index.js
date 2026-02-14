@@ -1,0 +1,45 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import HakkimizdaView from '../views/Hakkimizda.vue'
+import LoginFormView from '@/views/LoginForm.vue'
+import AdminPageView from '@/views/AdminPage.vue'
+import IletisimView from '@/views/Iletisim.vue'
+import ModeratorPageView from '@/views/ModeratorPage.vue'
+import UserPageView from '@/views/UserPage.vue'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: "hakkimizda",
+      component: HakkimizdaView
+    },
+    {
+      path: '/iletisim',
+      name: "iletisim",
+      component: IletisimView
+    },
+    {
+      path: '/signin',
+      name: "logirm-form",
+      component: LoginFormView
+    },
+    {
+      path: '/admin',
+      name: "admin-sayfasi",
+      component: AdminPageView
+    },
+    {
+      path: '/moderator',
+      name: "moderator-page",
+      component: ModeratorPageView
+    },
+    {
+      path: '/user',
+      name: "user-page",
+      component: UserPageView
+    }
+  ]
+})
+
+export default router
