@@ -1,0 +1,38 @@
+# --- GÜVENLİK ---
+.env
+.env.
+!.env.example
+
+# --- ECLIPSE (JavaBackend) ÖZEL ---
+.metadata
+.project
+.classpath
+.settings
+bin
+.launch
+.factorypath
+.tmp
+.bak
+
+# --- MAVEN  BUILD (Java) ---
+target
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# --- VUE.JS (VS CodeFrontend) ÖZEL ---
+node_modules
+dist
+.vscode
+.eslintcache
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.editorconfig
+
+# --- SİSTEM DOSYALARI ---
+.DS_Store
+Thumbs.db
+.log
